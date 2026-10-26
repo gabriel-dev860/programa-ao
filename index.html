@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Tech | Tecnologia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b14;
+            color: #ffffff;
+        }
+
+        header {
+            background: #101626;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 1px solid #00e5ff;
+        }
+
+        .logo {
+            color: #00e5ff;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            min-height: 480px;
+            padding: 100px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background:
+                linear-gradient(90deg, #080b14 25%, #080b14bb),
+                url("https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            max-width: 700px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00e5ff;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #b8c2d8;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            width: fit-content;
+            background: #00e5ff;
+            color: #080b14;
+            padding: 14px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h2 {
+            color: #00e5ff;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .titulo p {
+            color: #aab4ca;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #26364c;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #00e5ff;
+            transform: translateY(-7px);
+            box-shadow: 0 0 20px #00e5ff22;
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card-conteudo {
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: #00e5ff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #b8c2d8;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .sobre {
+            background: #101626;
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 800px;
+            margin: auto;
+            color: #b8c2d8;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .destaque {
+            color: #00e5ff;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #05070d;
+            text-align: center;
+            padding: 25px;
+            color: #8793a9;
+            border-top: 1px solid #1b2a3d;
+        }
+
+        footer span {
+            color: #00e5ff;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 75px 6%;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">HARDWARE TECH</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#componentes">Componentes</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h1>O FUTURO DA <span>TECNOLOGIA</span></h1>
+
+            <p>
+                Descubra o universo do hardware, conheça os componentes
+                que movem o mundo digital e explore o poder da inovação
+                tecnológica.
+            </p>
+
+            <a href="#componentes" class="botao">
+                EXPLORAR COMPONENTES
+            </a>
+        </section>
+
+        <section id="componentes">
+            <div class="titulo">
+                <h2>Componentes de Hardware</h2>
+                <p>Conheça as peças essenciais de um computador.</p>
+            </div>
+
+            <div class="produtos">
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=800&q=80"
+                        alt="Processador de computador">
+                    <div class="card-conteudo">
+                        <h3>Processadores</h3>
+                        <p>
+                            O cérebro do computador, responsável por
+                            executar instruções e processar dados.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80"
+                        alt="Placa de vídeo e componentes">
+                    <div class="card-conteudo">
+                        <h3>Placas de Vídeo</h3>
+                        <p>
+                            Potência gráfica para jogos, renderização,
+                            inteligência artificial e criação digital.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=800&q=80"
+                        alt="Memória e circuitos eletrônicos">
+                    <div class="card-conteudo">
+                        <h3>Memória RAM</h3>
+                        <p>
+                            Mantém dados temporários disponíveis para
+                            programas e tarefas em execução.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80"
+                        alt="Unidade de armazenamento">
+                    <div class="card-conteudo">
+                        <h3>Armazenamento SSD</h3>
+                        <p>
+                            Mais velocidade na inicialização do sistema,
+                            abertura de programas e transferência de arquivos.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="titulo">
+                <h2>Inovação Sem Limites</h2>
+            </div>
+
+            <p>
+                A tecnologia de hardware evolui constantemente,
+                oferecendo mais desempenho, eficiência e possibilidades.
+                Desde computadores para tarefas diárias até máquinas
+                de alto desempenho, cada componente tem um papel
+                fundamental no universo da informática.
+                <br><br>
+                <span class="destaque">
+                    Hardware forte. Ideias revolucionárias.
+                </span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 <span>Hardware Tech</span> | Tecnologia e Inovação</p>
+    </footer>
+
+</body>
+</html>
